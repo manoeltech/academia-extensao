@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Circuito Fitness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-orange-600 text-white py-6">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center">Academia Circuito Fitness</h1>
+      <p class="text-center mt-2">Coremas, PB</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Section: Treinos -->
+    <section>
+      <h2 class="text-2xl font-bold mb-6 text-center">Treinos</h2>
+
+      <!-- Tabs -->
+      <div class="flex justify-center space-x-4 mb-8">
+        <button class="tab-button bg-orange-500 text-white px-4 py-2 rounded" onclick="showTab('iniciante')">Iniciante</button>
+        <button class="tab-button bg-orange-500 text-white px-4 py-2 rounded" onclick="showTab('intermediario')">Intermediário</button>
+        <button class="tab-button bg-orange-500 text-white px-4 py-2 rounded" onclick="showTab('avancado')">Avançado</button>
+      </div>
+
+      <!-- Treinos por nível -->
+      <div id="iniciante" class="tab-content">
+        <h3 class="text-xl font-semibold mb-4">Treinos para Iniciantes</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-4 bg-white rounded shadow">
+            <h4 class="font-bold mb-2">Treino Superior</h4>
+            <ul class="list-disc list-inside">
+              <li>Supino com halteres - 3x12</li>
+              <li>Rosca direta - 3x10</li>
+              <li>Elevação lateral - 3x15</li>
+            </ul>
+          </div>
+          <div class="p-4 bg-white rounded shadow">
+            <h4 class="font-bold mb-2">Treino Inferior</h4>
+            <ul class="list-disc list-inside">
+              <li>Agachamento livre - 3x12</li>
+              <li>Leg press - 3x10</li>
+              <li>Elevação de panturrilha - 3x15</li>
+            </ul>
+          </div>
+          <div class="p-4 bg-white rounded shadow">
+            <h4 class="font-bold mb-2">Treino Cardio</h4>
+            <ul class="list-disc list-inside">
+              <li>Esteira - 20 minutos</li>
+              <li>Bicicleta - 15 minutos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Treinos para Intermediários -->
+<div id="intermediario" class="tab-content hidden">
+  <h3 class="text-xl font-semibold mb-4">Treinos para Intermediários</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="p-4 bg-white rounded shadow">
+      <h4 class="font-bold mb-2">Treino Superior</h4>
+      <ul class="list-disc list-inside">
+        <li>Supino reto - 4x10</li>
+        <li>Rosca martelo - 3x12</li>
+        <li>Desenvolvimento com barra - 3x10</li>
+      </ul>
+    </div>
+    <div class="p-4 bg-white rounded shadow">
+      <h4 class="font-bold mb-2">Treino Inferior</h4>
+      <ul class="list-disc list-inside">
+        <li>Agachamento sumô - 4x12</li>
+        <li>Afundos alternados - 3x10</li>
+        <li>Elevação de panturrilha com carga - 4x15</li>
+      </ul>
+    </div>
+    <div class="p-4 bg-white rounded shadow">
+      <h4 class="font-bold mb-2">Treino Cardio</h4>
+      <ul class="list-disc list-inside">
+        <li>HIIT na esteira - 15 minutos (30 seg. corrida / 1 min caminhada)</li>
+        <li>Escada - 10 minutos</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <!-- Treinos para Avançados -->
+    <div id="avancado" class="tab-content hidden">
+      <h3 class="text-xl font-semibold mb-4">Treinos para Avançados</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-bold mb-2">Treino Superior</h4>
+          <ul class="list-disc list-inside">
+            <li>Supino inclinado com barra - 4x8</li>
+            <li>Pull-ups - 4x10</li>
+            <li>Crucifixo invertido - 3x12</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-bold mb-2">Treino Inferior</h4>
+          <ul class="list-disc list-inside">
+            <li>Levantamento terra - 4x8</li>
+            <li>Agachamento com salto - 4x10</li>
+            <li>Cadeira extensora com carga máxima - 3x12</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-white rounded shadow">
+          <h4 class="font-bold mb-2">Treino Cardio</h4>
+          <ul class="list-disc list-inside">
+            <li>HIIT avançado na bicicleta - 20 minutos (40 seg. sprint / 20 seg. descanso)</li>
+            <li>Corda de batalha - 5 séries de 1 minuto</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Seção: Receitas de Dietas e Bem-Estar -->
+<section class="mt-12">
+  <h2 class="text-2xl font-bold mb-6 text-center">Receitas de Dietas e Bem-Estar</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Receita 1 -->
+    <div class="p-4 bg-white rounded shadow">
+      <h3 class="font-bold text-xl mb-2">Smoothie de Proteína</h3>
+      <p class="text-sm text-gray-600 mb-4">Ideal para o café da manhã ou pós-treino.</p>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>1 banana congelada</li>
+        <li>1 scoop de whey protein (sabor baunilha ou chocolate)</li>
+        <li>200ml de leite desnatado ou vegetal</li>
+        <li>1 colher de sopa de pasta de amendoim</li>
+        <li>Gelo a gosto</li>
+      </ul>
+      <p class="mt-4 text-gray-700">Modo de preparo: Bata todos os ingredientes no liquidificador até obter uma textura cremosa.</p>
+    </div>
+
+    <!-- Receita 2 -->
+    <div class="p-4 bg-white rounded shadow">
+      <h3 class="font-bold text-xl mb-2">Salada Detox</h3>
+      <p class="text-sm text-gray-600 mb-4">Perfeita para o almoço ou jantar.</p>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Folhas verdes (rúcula, alface e espinafre)</li>
+        <li>1/2 pepino fatiado</li>
+        <li>1 cenoura ralada</li>
+        <li>1 peito de frango grelhado em cubos</li>
+        <li>Molho: azeite, limão, sal e pimenta a gosto</li>
+      </ul>
+      <p class="mt-4 text-gray-700">Modo de preparo: Misture todos os ingredientes e sirva com o molho.</p>
+    </div>
+
+    <!-- Receita 3 -->
+    <div class="p-4 bg-white rounded shadow">
+      <h3 class="font-bold text-xl mb-2">Panqueca de Aveia</h3>
+      <p class="text-sm text-gray-600 mb-4">Ótima opção para um lanche saudável.</p>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>2 ovos</li>
+        <li>2 colheres de sopa de aveia em flocos</li>
+        <li>1 colher de sopa de mel</li>
+        <li>1 colher de chá de canela</li>
+        <li>Frutas para acompanhamento</li>
+      </ul>
+      <p class="mt-4 text-gray-700">Modo de preparo: Misture os ingredientes, despeje em uma frigideira antiaderente e asse dos dois lados.</p>
+    </div>
+  </div>
+
+  <!-- Dicas de Bem-Estar -->
+  <div class="mt-12">
+    <h3 class="text-xl font-bold mb-4 text-center">Dicas de Bem-Estar</h3>
+    <ul class="list-disc list-inside text-gray-700">
+      <li>Durma pelo menos 7-8 horas por noite para garantir a recuperação muscular.</li>
+      <li>Beba bastante água: mantenha-se hidratado durante todo o dia.</li>
+      <li>Pratique alongamentos diariamente para melhorar a flexibilidade e evitar lesões.</li>
+      <li>Inclua alimentos ricos em fibras, como frutas, vegetais e grãos integrais, na sua dieta.</li>
+      <li>Reserve um tempo para relaxar e cuidar da sua saúde mental, como meditação ou leitura.</li>
+    </ul>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-orange-600 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Academia Circuito Fitness | Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
